@@ -16,9 +16,8 @@ def do_thing(said, num):
     if num > 7:
         response = getresponse(said, DIALOGFLOW_LANGUAGE_CODE, session)
         return response
-    else:
-        response = intro(num)
-        return response
+    response = intro(num)
+    return response
 
 
 DIALOGFLOW_PROJECT_ID = 'cosc-310-ewoqcu'
@@ -65,19 +64,19 @@ return2 = "Formal Disclaimer that this is a chatbot and not a professional help 
 def intro(num):
     if num == 0:
         return "Say hi to get started"
-    elif num == 1:
+    if num == 1:
         return return2
-    elif num == 2:
+    if num == 2:
         return "How old are you?"
-    elif num == 3:
+    if num == 3:
         return "What is your name?"
-    elif num == 4:
+    if num == 4:
         return "Are you currently a elementary school student, middle school student, high school student, univeristy school student, or not a student?"
-    elif num == 5:
+    if num == 5:
         return "On a scale of 1 to 5 with one being terrible and five being great, how are you feeling currently?"
-    elif num == 6:
+    if num == 6:
         return "My focus is anxiety. On a scale of 1 to 5 with one being no anxiety and 5 being a anxiety attack, how anxious are you feeling today?"
-    elif num == 7:
+    if num == 7:
         return "Ok lets get started. Tell me about how you are feeling today."
 
 # introconversation("Say hi to get started")
