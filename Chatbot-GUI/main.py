@@ -6,10 +6,7 @@ import os
 import sys
 
 import dialogflow
-import json
-import requests
 from google.api_core.exceptions import InvalidArgument
-from google.oauth2 import service_account
 
 
 def do_thing(said, num):
