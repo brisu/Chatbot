@@ -5,16 +5,12 @@ https://www.youtube.com/watch?v=Lbfe3-v7yE0&list=PLQVvvaa0QuDdzLB_0JSTTcl8E8jsJL
 '''
 
 import socket
-import select
 import errno
 import os
 import sys
 
 import dialogflow
-import json
-import requests
 from google.api_core.exceptions import InvalidArgument
-from google.oauth2 import service_account
 
 
 '''
